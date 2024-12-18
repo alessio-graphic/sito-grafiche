@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendita Grafiche Personalizzate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #555;
+            padding: 0.5rem 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            margin-bottom: 1rem;
+        }
+
+        .form-section {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-section h2 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea, button {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vendita di Grafiche Personalizzate</h1>
+        <p>Descrivi la tua immagine e io la creerò per te!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#come-funziona">Come Funziona</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h1>Crea la tua immagine personalizzata</h1>
+            <p>Descrivi la tua idea e riceverai una grafica su misura per te.</p>
+        </section>
+
+        <section class="form-section" id="come-funziona">
+            <h2>Descrivi la tua immagine</h2>
+            <form action="/invia-descrizione" method="POST">
+                <label for="nome">Il tuo nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+
+                <label for="email">La tua email</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+                <label for="descrizione">Descrizione della grafica</label>
+                <textarea id="descrizione" name="descrizione" rows="5" placeholder="Descrivi l'immagine che desideri (colori, stile, oggetti, ecc.)" required></textarea>
+
+                <button type="submit">Invia Descrizione</button>
+            </form>
+        </section>
+    </div>
+
+    <footer id="contatti">
+        <p>Contattaci: <a href="mailto:info@grafichepersonalizzate.com">info@grafichepersonalizzate.com</a></p>
+        <p>&copy; 2024 - Vendita di Grafiche Personalizzate</p>
+    </footer>
+</body>
+
+</html>
